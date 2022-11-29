@@ -1,0 +1,16 @@
+.about__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 32px;
+}
+
+.about__item {
+  width: 100%;
+  min-height: 104px;
+  flex-basis: calc((100% - 20px) / 2);
+}
+
+.about__subtitle {
+  margin-bottom: 8px;
+}
