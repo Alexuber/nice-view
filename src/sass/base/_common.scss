@@ -7,24 +7,31 @@ body {
     letter-spacing: 0.02em;
   }
   
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  
-    @media screen and (max-width: 767px) {
-      max-width: 480px;
-    }
-  
-    @media screen and (min-width: $tablet) {
-      width: 768px;
-    }
-  
-    @media screen and (min-width: $desctop) {
-      width: 1200px;
-    }
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  // mobile
+  @media screen and (max-width: 767px) {
+    max-width: 320px;
   }
+
+  // tablet
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  // desctop
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+}
   
   .link {
     text-decoration: none;
