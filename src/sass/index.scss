@@ -1,2 +1,16 @@
-@import './common';
-@import './example';
+@import './base/common';
+@import './base/example';
+@import './base/reset';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about-us';
+@import './layout/apartments';
+@import './layout/infrastructure';
+@import './layout/gallery';
+@import './layout/contacts';
+@import './layout/footer';
+
+@import './utils/vars';
+
+
