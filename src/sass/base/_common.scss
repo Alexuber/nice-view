@@ -1,7 +1,7 @@
 body {
   font-family: $main-font;
   font-style: normal;
-  color: var(--main-txt-cl);
+  color: $main-font-color;
   font-size: 16px;
   line-height: calc(24 / 16);
 }
@@ -25,9 +25,8 @@ body {
   }
 }
 
-.link {
-  text-decoration: none;
-  color: currentColor;
+main {
+  background-color: $background-back;
 }
 
 .link {

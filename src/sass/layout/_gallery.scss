@@ -1,0 +1,24 @@
+.gallery {
+  padding-top: 60px;
+
+  @media screen and (max-width: $tablet) {
+    padding-top: 100px;
+
+  }
+}
+
+.gallery-title {
+  text-align: left;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(60/40);
+  color: $main-font-color;
+
+  
+}
+
+.gallery .container {
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
