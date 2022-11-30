@@ -1,31 +1,31 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 body {
-  font-family: var(--main-font);
-  color: var(--main-txt-cl);
-  font-size: 18px;
-  line-height: 1.6666666667;
-  letter-spacing: 0.02em;
+  font-family: "Poppins";
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 @media screen and (max-width: 767px) {
   .container {
-    max-width: 480px;
+    max-width: 320px;
   }
 }
-@media screen and (min-width: 767.98px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
-@media screen and (min-width: 1199.98px) {
+@media screen and (min-width: 1280px) {
   .container {
-    width: 1200px;
+    width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
   }
 }
 
@@ -112,4 +112,279 @@ img {
 .list {
   list-style: none;
   margin: 0;
+}
+
+.hero {
+  max-width: 1280px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/hero/img1-mob@1x.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/img1-mob@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(../images/hero/img1-tab@1x.jpg);
+    height: 720px;
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/img1-tab@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url(../images/hero/img1-ds@1x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/img1-ds@1x.jpg);
+  }
+}
+
+.hero__container {
+  min-height: 491px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .hero__container {
+    padding-top: 32px;
+    padding-bottom: 100px;
+  }
+}
+
+.hero__title {
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 1.5;
+  width: 100%;
+  color: #7e6d53;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    line-height: 1.5;
+  }
+}
+
+.hero__subtitle {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 246px;
+  color: #7e6d53;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .hero__subtitle {
+    line-height: 1.5;
+    margin-bottom: 383px;
+  }
+}
+
+.hero__btn {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.5;
+  border: none;
+  color: #2d2a22;
+  width: 200px;
+  height: 50px;
+  background-color: #fcfcfb;
+  border-radius: 16px;
+}
+@media screen and (min-width: 768px) {
+  .hero__btn {
+    width: 256px;
+    height: 54px;
+  }
+}
+
+.about {
+  padding-top: 60px;
+  padding-bottom: 297px;
+}
+
+.about__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.about__item {
+  width: 100%;
+  min-height: 104px;
+  flex-basis: calc((100% - 20px) / 2);
+}
+
+.about__subtitle {
+  margin-bottom: 8px;
+}
+
+.apartments__title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+  margin-bottom: 28px;
+  color: #7e6d53;
+}
+@media screen and (min-width: 768px) {
+  .apartments__title {
+    margin-bottom: 40px;
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+
+.apartments_group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.apartments__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-bottom: 28px;
+  justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .apartments__list {
+    flex-wrap: nowrap;
+  }
+}
+
+.apartments__item {
+  padding: 20px 32px;
+}
+.apartments__item:hover, .apartments__item:focus {
+  border: 2px solid rgb(126, 109, 83);
+  border-radius: 16px;
+}
+
+.apartments__img {
+  margin-bottom: 20px;
+}
+
+.apartments__subtitle {
+  font-size: 28px;
+  line-height: 120%;
+  margin-bottom: 8px;
+  color: #2d2a22;
+  text-align: center;
+}
+
+.apartments__text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 130%;
+  color: #7e6d53;
+  text-align: center;
+}
+
+.apartments__btn {
+  background-color: rgb(126, 109, 83);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fcfcfb;
+  border: none;
+  border-radius: 16px;
+  margin: 0 auto;
+  width: 240px;
+  height: 54px;
+  padding: 14px 28px;
+}
+@media screen and (min-width: 768px) {
+  .apartments__btn {
+    width: 264px;
+    height: 58px;
+  }
+}
+
+.contacts {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.contacts__title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+  margin-bottom: 8px;
+  text-align: center;
+  color: #7e6d53;
+}
+
+.contacts__subtitle {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 26px;
+  text-align: center;
+  color: #7e6d53;
+}
+
+.contacts__group {
+  padding: 24px 20px;
+  background-color: #7e6d53;
+  border-radius: 16px;
+}
+@media screen and (min-width: 768px) {
+  .contacts__group {
+    padding: 53px 74px;
+    max-width: 704px;
+    display: flex;
+    gap: 68px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__group {
+    max-width: 700px;
+  }
+}
+
+.contacts__list {
+  margin-bottom: 22px;
+}
+
+.contacts__item {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.contacts__item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.contscts__icon {
+  margin-right: 8px;
+}
+
+.contacts__btn {
+  width: 240px;
+  height: 48px;
+  background-color: #fcfcfb;
+  border-radius: 8px;
+  border: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2d2a22;
 }/*# sourceMappingURL=index.css.map */
