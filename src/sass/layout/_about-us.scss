@@ -1,27 +1,122 @@
 .about {
+  max-width: 1280px;
   padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.about__wrapper {
   padding-bottom: 297px;
+
+  @media screen and (min-width: 768px) {
+    padding: 40px, 32px;
+  }
+
+  background-repeat: repeat, no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-image: url(../images/features/img-mob@1x.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/features/img-mob@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/features/img1-tab@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/features/img1-tab@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/features/img1-ds@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/features/img1-ds@2x.jpg);
+    }
+  }
+}
+
+.about__container {
+  padding: 20px;
+  background-color: rgba(252, 252, 251, 0.9);
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
 }
 
 .about__list {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
 
-  margin-bottom: 32px;
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 32px;
+  }
 
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  color: #7e6d53;
 }
 
 .about__item {
   width: 100%;
   min-height: 104px;
   flex-basis: calc((100% - 20px) / 2);
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    width: 152px;
+  }
+}
+
+.about__box {
+  @media screen and (min-width: 768px) {
+    width: 336px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 390px;
+  }
 }
 
 .about__subtitle {
   margin-bottom: 8px;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2d2a22;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.about__descr {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #7e6d53;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 }

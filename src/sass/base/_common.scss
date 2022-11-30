@@ -1,57 +1,53 @@
-
 body {
-    // color: var(--main-txt-cl);
-    // font-size: 18px;
-    // line-height: calc(30 / 18);
-    // letter-spacing: 0.02em;
-    font-family: 'Poppins';
-    }
+  // color: var(--main-txt-cl);
+  // font-size: 18px;
+  // line-height: calc(30 / 18);
+  // letter-spacing: 0.02em;
+  font-family: 'Poppins';
+}
 
-   .container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 
-    @media screen and (max-width: 767px) {
-      max-width: 320px;
-  
-    }
-
-    @media screen and (min-width: 768px) {
-      width: 768px;
-      padding-left: 32px;
-      padding-right: 32px;
-
-    }
-
-    @media screen and (min-width: 1280px) {
-      width: 1280px;
-      padding-left: 85px;
-      padding-right: 85px;
-
-    }
+  @media screen and (max-width: 767px) {
+    max-width: 320px;
   }
 
-  .link {
-    text-decoration: none;
-    color: currentColor;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
-  .list {
-    list-style: none;
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
   }
+}
 
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
 
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+.list {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
