@@ -15,25 +15,25 @@
   background-position: center;
   background-size: cover;
 
-  background-image: url(../images/about/img-mob@1x.jpg);
+  background-image: url(../images/about/img1-mob@1x.jpg);
 
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (-o-min-device-pixel-ratio: 2/1),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/about/img-mob@2x.jpg);
+    background-image: url(../images/about/img1-mob@2x.jpg);
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url(../images/about/img1-tab@1x.jpg);
+    background-image: url(../images/about/img1_tab@1x.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (-o-min-device-pixel-ratio: 2/1),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/about/img1-tab@2x.jpg);
+      background-image: url(../images/about/img1_tab@2x.jpg);
     }
   }
 
@@ -56,6 +56,7 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+    align-items: center;
   }
 
   @media screen and (min-width: 1200px) {
@@ -81,10 +82,25 @@
   width: 100%;
   min-height: 104px;
   flex-basis: calc((100% - 20px) / 2);
+  display: flex;
+  align-items: flex-end;
 
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     width: 152px;
   }
+
+  @media screen and (min-width: 1280px) {
+    min-height: 80px;
+  }
+
+  position: relative;
+}
+
+.about__descr::before {
+  content: url(../images/about/icon-1@1x.png);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .about__box {
@@ -103,24 +119,20 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
-  color: #2d2a22;
+  color: $dark-font;
 
   @media screen and (min-width: 768px) {
     font-size: 24px;
   }
 }
 
-.about__descr {
+.about__txt {
   font-weight: 300;
   font-size: 12px;
   line-height: 1.5;
-  color: #7e6d53;
+  color: $main-font-color;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
   }
 }
-
-// .about__descr::before {
-//   content: '';
-// }
