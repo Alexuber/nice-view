@@ -2,6 +2,8 @@
   max-width: 1280px;
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 // .section {
@@ -107,9 +109,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    max-width: 500px;
     row-gap: 92px;
-    column-gap: 72px;
   }
 }
 
