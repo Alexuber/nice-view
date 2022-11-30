@@ -1,6 +1,6 @@
 .contacts {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .contacts__title {
@@ -49,6 +49,7 @@
   font-size: 14px;
   line-height: 21px;
   color: rgba(255, 255, 255, 0.6);
+
   &:not(:last-child) {
     margin-bottom: 14px;
   }
@@ -58,6 +59,8 @@
 }
 
 .contscts__icon {
+  stroke: #fcfcfb;
+  fill: none;
   margin-right: 8px;
 }
 
