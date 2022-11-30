@@ -10,7 +10,7 @@
   margin-bottom: 8px;
   text-align: center;
 
-  color: #7e6d53;
+  color: $main-font-color;
 }
 
 .contacts__subtitle {
@@ -19,13 +19,15 @@
   line-height: 30px;
   margin-bottom: 26px;
   text-align: center;
-  color: #7e6d53;
+  color: $main-font-color;
 }
 
 .contacts__group {
   padding: 24px 20px;
-  background-color: #7e6d53;
+  background-color: $main-font-color;
   border-radius: 16px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: 768px) {
     padding: 53px 74px;
@@ -35,7 +37,7 @@
     justify-content: center;
     align-items: center;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     max-width: 700px;
   }
 }
@@ -56,6 +58,8 @@
 }
 
 .contacts__link {
+  display: flex;
+  align-items: center;
 }
 
 .contscts__icon {
@@ -75,5 +79,5 @@
   font-size: 16px;
   line-height: 24px;
 
-  color: #2d2a22;
+  color: $dark-font;
 }
