@@ -1,13 +1,9 @@
 body {
   font-family: $main-font;
   font-style: normal;
-  color: $main-font-color;
+  color: var(--main-txt-cl);
   font-size: 16px;
   line-height: calc(24 / 16);
-}
-
-main {
-  background-color: $background-back;
 }
 
 .container {
@@ -26,9 +22,12 @@ main {
 
   @media screen and (min-width: $desctop) {
     width: 1280px;
-    padding-left: 85px;
-    padding-right: 85px;
   }
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
 }
 
 .link {
