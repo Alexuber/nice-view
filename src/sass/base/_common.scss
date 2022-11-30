@@ -1,39 +1,31 @@
 
 body {
-
-    // color: var(--main-txt-cl);
-    // font-size: 18px;
-    // line-height: calc(30 / 18);
-    // letter-spacing: 0.02em;
-    font-family: 'Poppins';
-    }
-
-   .container {
+    font-family: var(--main-font);
+    color: var(--main-txt-cl);
+    font-size: 18px;
+    line-height: calc(30 / 18);
+    letter-spacing: 0.02em;
+  }
+  
+  .container {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    @media screen and (max-width: 767px) {
-      max-width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
   
+    @media screen and (max-width: 767px) {
+      max-width: 480px;
     }
-
-    @media screen and (min-width: 768px) {
+  
+    @media screen and (min-width: $tablet) {
       width: 768px;
-      padding-left: 32px;
-      padding-right: 32px;
-
     }
-
-    @media screen and (min-width: 1280px) {
-      width: 1280px;
-      padding-left: 85px;
-      padding-right: 85px;
-
+  
+    @media screen and (min-width: $desctop) {
+      width: 1200px;
     }
   }
-
+  
   .link {
     text-decoration: none;
     color: currentColor;
