@@ -26,6 +26,8 @@
   padding: 24px 20px;
   background-color: #7e6d53;
   border-radius: 16px;
+  margin-right: auto;
+  margin-left: auto;
 
   @media screen and (min-width: 768px) {
     padding: 53px 74px;
@@ -42,6 +44,10 @@
 
 .contacts__list {
   margin-bottom: 22px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__item {
@@ -55,10 +61,14 @@
 }
 
 .contacts__link {
+  display: flex;
+  align-items: center;
 }
 
 .contscts__icon {
   margin-right: 8px;
+  stroke: white;
+  fill: none;
 }
 
 .contacts__btn {
