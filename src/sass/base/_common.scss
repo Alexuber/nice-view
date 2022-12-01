@@ -6,10 +6,6 @@ body {
   line-height: calc(24 / 16);
 }
 
-main {
-  background-color: $background-back;
-}
-
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -26,9 +22,11 @@ main {
 
   @media screen and (min-width: $desctop) {
     width: 1280px;
-    padding-left: 85px;
-    padding-right: 85px;
   }
+}
+
+main {
+  background-color: $background-back;
 }
 
 .link {
