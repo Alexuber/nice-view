@@ -135,32 +135,27 @@
   position: relative;
 }
 
-.about__descr--one::before {
-  content: url(../images/about/icon-1@1x.png);
+.about__descr::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 24px;
 }
 
-.about__descr--two::before {
-  content: url(../images/about/icon-2@1x.png);
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+@each $item in suitcase, graph, house, awards {
+  .about__descr--#{$item}::before {
+    background-image: url(../images/about/icon-#{$item}@1x.png);
 
-.about__descr--three::before {
-  content: url(../images/about/icon-3@1x.png);
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.about__descr--four::before {
-  content: url(../images/about/icon-4@1x.png);
-  position: absolute;
-  top: 0;
-  left: 0;
+    @media screen and (max-resolution: 2) {
+      background-image: url(../images/about/icon-#{$item}@2x.png);
+    }
+  }
 }
 
 .about__box {
