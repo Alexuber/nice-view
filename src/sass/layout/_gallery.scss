@@ -15,6 +15,13 @@
   line-height: calc(60/40);
   color: $main-font-color;
 
+  @media screen and (min-width:$tablet) {
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width:$desctop) {
+    margin-bottom: 20px;
+  }
   
 }
 
