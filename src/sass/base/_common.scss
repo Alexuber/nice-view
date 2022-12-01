@@ -12,30 +12,26 @@ body {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-<<<<<<<<< Temporary merge branch 1
+
 
     @media screen and (max-width: 767px) {
       max-width: 480px;
-=========
->>>>>>>>> Temporary merge branch 2
+
   
     }
   
     @media screen and (min-width: $tablet) {
       width: 768px;
-<<<<<<<<< Temporary merge branch 1
 
     }
 
     @media screen and (min-width: 1280px) {
       width: 1280px;
 
-=========
     }
   
     @media screen and (min-width: $desctop) {
       width: 1200px;
->>>>>>>>> Temporary merge branch 2
     }
   }
   
