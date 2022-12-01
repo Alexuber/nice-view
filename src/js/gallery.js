@@ -5,9 +5,10 @@ const swiper = new Swiper('.mySwiper', {
    // configure Swiper to use modules
    modules: [Navigation, Pagination],
   // Optional parameters
-  slidesPerView: 1,
-  spaceBetween: 30,
+  slidesPerView: 3,
+  spaceBetween: 0,
   loop: true,
+  
 
   // If we need pagination
   pagination: {
