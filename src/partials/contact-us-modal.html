@@ -17,6 +17,8 @@
         id="user_name"
         placeholder="Yuliia"
         required
+        minlength="2"
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
       />
       <label class="contact-us-modal__label" for="user_phone">
         Telephone
@@ -28,6 +30,8 @@
         id="user_phone"
         placeholder="+380"
         required
+        maxlength="13"
+        pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
       />
       <label class="contact-us-modal__label" for="user_email"> Email </label>
       <input
