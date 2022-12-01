@@ -38,10 +38,8 @@
   background-image: url(../images/about/img1-mob@1x.jpg);
 
   @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (-o-min-device-pixel-ratio: 2/1),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     background-image: url(../images/about/img1-mob@2x.jpg);
   }
 
@@ -49,10 +47,8 @@
     background-image: url(../images/about/img1_tab@1x.jpg);
 
     @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (-o-min-device-pixel-ratio: 2/1),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
       background-image: url(../images/about/img1_tab@2x.jpg);
     }
   }
@@ -61,10 +57,8 @@
     background-image: url(../images/about/img1-ds@1x.jpg);
 
     @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (-o-min-device-pixel-ratio: 2/1),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
       background-image: url(../images/about/img1-ds@2x.jpg);
     }
   }
@@ -114,7 +108,6 @@
 }
 
 .about__item {
-  min-height: 104px;
   flex-basis: calc((100% - 20px) / 2);
   display: flex;
   align-items: flex-end;
@@ -133,13 +126,8 @@
   }
 }
 
-.about__descr {
-  position: relative;
-}
-
 .about__descr::before {
   content: '';
-  position: absolute;
   top: 0;
   left: 0;
   display: block;
@@ -147,14 +135,17 @@
   height: 32px;
   background-position: center;
   background-repeat: no-repeat;
-  padding-bottom: 24px;
+  background-size: 32px;
+  margin-bottom: 24px;
 }
 
 @each $item in suitcase, graph, house, awards {
   .about__descr--#{$item}::before {
     background-image: url(../images/about/icon-#{$item}@1x.png);
 
-    @media screen and (max-resolution: 2) {
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/about/icon-#{$item}@2x.png);
     }
   }
