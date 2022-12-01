@@ -1,50 +1,48 @@
 .hero {
   max-width: 1280px;
-  // min-height: 491px;
+  min-height: 451px;
   margin-right: auto;
   margin-left: auto;
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(../images/hero/img1-mob@1x.jpg);
+  background-image: url(../images/hero/img1-mob@1x.png);
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/hero/img1-mob@2x.jpg);
+    background-image: url(../images/hero/img1-mob@2x.png);
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url(../images/hero/img1-tab@1x.jpg);
+    background-image: url(../images/hero/img1-tab@1x.png);
     height: 720px;
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/hero/img1-tab@2x.jpg);
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/img1-tab@2x.png);
+    }
   }
-  }
-  
 
-  @media screen and (min-width: 1200px) {
-    background-image: url(../images/hero/img1-ds@1x.jpg);
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/hero/img1-ds@1x.png);
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/hero/img1-ds@2x.jpg);
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/img1-ds@2x.png);
+    }
   }
-  }
-
-  
 }
 
 .hero__container {
-  min-height: 491px;
+  min-height: 451px;
   text-align: center;
   padding-top: 15px;
   padding-bottom: 60px;
 
   @media screen and (min-width: 768px) {
+    min-height: 720px;
     padding-top: 32px;
     padding-bottom: 100px;
   }
@@ -52,27 +50,33 @@
 
 .hero__title {
   font-weight: 400;
-  font-size: 72px;
+  font-size: 48px;
   line-height: calc(72 / 48);
   width: 100%;
-  color: #7e6d53;
+  color: $main-font-color;
 
   @media screen and (min-width: 768px) {
     line-height: calc(108 / 72);
+    font-size: 72px;
   }
 }
 
 .hero__subtitle {
   font-weight: 300;
-  font-size: 24px;
+  font-size: 16px;
   line-height: calc(24 / 16);
+
+  width: 193px;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 246px;
 
-  color: #7e6d53;
-  text-align: center;
+  color: $main-font-color;
 
   @media screen and (min-width: 768px) {
+    width: 484px;
     line-height: calc(36 / 24);
+    font-size: 24px;
     margin-bottom: 383px;
   }
 }
@@ -83,7 +87,7 @@
   line-height: calc(36 / 24);
   border: none;
 
-  color: #2d2a22;
+  color: $dark-font;
 
   width: 200px;
   height: 50px;
