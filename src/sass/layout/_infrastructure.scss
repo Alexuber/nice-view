@@ -1,4 +1,10 @@
 .section--infrastructure {
+  padding-top: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+  }
+
   .infrastructure__title {
     font-family: 'Poppins';
     font-style: normal;

@@ -65,6 +65,7 @@
   border: none;
   border-radius: 50%;
   outline: none;
+  cursor: pointer;
 
   position: absolute;
   top: 12px;
@@ -192,6 +193,7 @@
   background: $main-font-color;
   border: 1px solid transparent;
   border-radius: 8px;
+  cursor: pointer;
 
   font-family: 'Poppins';
   line-height: calc(24 / 16);
