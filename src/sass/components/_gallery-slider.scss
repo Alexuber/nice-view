@@ -14,6 +14,7 @@
 .swiper {
   --swiper-theme-color: $background-back;
   --swiper-navigation-size: 12px;
+  z-index: 0;
 
   @media screen and (min-width: $tablet) {
     --swiper-theme-color: #000000;
@@ -46,9 +47,7 @@
 
 .swiper-slide img {
   object-fit: cover;
-
 }
-
 
 .swiper-pagination-bullet {
   --swiper-pagination-bullet-inactive-color: #c4c4c4;
@@ -73,7 +72,6 @@
   justify-content: center;
 }
 
-
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
@@ -85,47 +83,39 @@
 
 .swiper-controls {
   position: relative;
-  --swiper-theme-color:$background-back;
-  --swiper-navigation-size:12px;
+  --swiper-theme-color: $background-back;
+  --swiper-navigation-size: 12px;
   bottom: 115px;
 
-  @media screen and (min-width:$mobile) {
+  @media screen and (min-width: $mobile) {
     bottom: 200px;
   }
 
-  @media screen and (min-width:$tablet) {
-    --swiper-navigation-size:23px;
-    --swiper-theme-color:#000000;
+  @media screen and (min-width: $tablet) {
+    --swiper-navigation-size: 23px;
+    --swiper-theme-color: #000000;
     bottom: 215px;
-
   }
 
-  @media screen and (min-width:$desctop) {
+  @media screen and (min-width: $desctop) {
     bottom: 305px;
-
   }
 }
 
 .swiper-button-next {
-
-  @media screen and (min-width:$tablet) {
-    right: -21px
-
+  @media screen and (min-width: $tablet) {
+    right: -21px;
   }
-  @media screen and (min-width:$desctop) {
-    right: -0px
-
+  @media screen and (min-width: $desctop) {
+    right: -0px;
   }
-  }
-
+}
 
 .swiper-button-prev {
-    @media screen and (min-width:$tablet) {
-      left: -21px;
-  
-    }
-    @media screen and (min-width:$desctop) {
-      left: 0;
-  
-    }
+  @media screen and (min-width: $tablet) {
+    left: -21px;
+  }
+  @media screen and (min-width: $desctop) {
+    left: 0;
+  }
 }
