@@ -113,3 +113,50 @@
   left: 0;
   width: 100%;
 }
+
+.swiper-controls {
+  position: relative;
+  --swiper-theme-color:$background-back;
+  --swiper-navigation-size:12px;
+  bottom: 115px;
+
+  @media screen and (min-width:$mobile) {
+    bottom: 200px;
+  }
+
+  @media screen and (min-width:$tablet) {
+    --swiper-navigation-size:23px;
+    --swiper-theme-color:#000000;
+    bottom: 215px;
+
+  }
+
+  @media screen and (min-width:$desctop) {
+    bottom: 305px;
+
+  }
+}
+
+.swiper-button-next {
+
+  @media screen and (min-width:$tablet) {
+    right: -21px
+
+  }
+  @media screen and (min-width:$desctop) {
+    right: -0px
+
+  }
+  }
+
+
+.swiper-button-prev {
+    @media screen and (min-width:$tablet) {
+      left: -21px;
+  
+    }
+    @media screen and (min-width:$desctop) {
+      left: 0;
+  
+    }
+}
