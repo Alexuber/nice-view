@@ -1,59 +1,57 @@
-
 body {
-    font-family: var(--main-font);
-    color: var(--main-txt-cl);
-    font-size: 18px;
-    line-height: calc(30 / 18);
-    letter-spacing: 0.02em;
-  }
-  
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+  font-family: $main-font;
+  font-style: normal;
+  color: $main-font-color;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+}
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 
-    @media screen and (max-width: 767px) {
-      max-width: 480px;
-
-  
-    }
-  
-    @media screen and (min-width: $tablet) {
-      width: 768px;
-
-    }
-
-    @media screen and (min-width: 1280px) {
-      width: 1280px;
-
-    }
-  
-    @media screen and (min-width: $desctop) {
-      width: 1200px;
-    }
-  }
-  
-  .link {
-    text-decoration: none;
-    color: currentColor;
+  @media screen and (max-width: $tablet) {
+    max-width: 480px;
   }
 
-  .list {
-    list-style: none;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-right: 32px;
+    padding-left: 32px;
   }
 
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-right: 32px;
+    padding-left: 32px;
   }
+}
+
+main {
+  background-color: $background-back;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

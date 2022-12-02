@@ -1,0 +1,46 @@
+.gallery {
+  padding-top: 60px;
+
+  @media screen and (max-width: $tablet) {
+    padding-top: 100px;
+
+  }
+}
+
+.gallery-container {
+  padding-left: 0;
+  padding-right: 0;
+
+  @media screen and (min-width:$tablet) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width:$desctop) {
+    padding-left: 68px;
+    padding-right: 68px;
+  }
+}
+
+.gallery-title {
+  text-align: left;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(60/40);
+  color: $main-font-color;
+
+  @media screen and (min-width:$tablet) {
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width:$desctop) {
+    margin-bottom: 20px;
+  }
+  
+}
+
+// .gallery .container {
+//   outline: 1px solid red;
+//   outline-offset: -2px;
+// }
