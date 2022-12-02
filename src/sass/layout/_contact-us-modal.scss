@@ -111,6 +111,10 @@
   }
 }
 
+.contact-us-modal__form:not(:placeholder-shown):required:invalid {
+  background-color: #ff0000;
+}
+
 .contact-us-modal__label {
   margin-bottom: 8px;
 
