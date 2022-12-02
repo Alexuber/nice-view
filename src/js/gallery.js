@@ -1,36 +1,31 @@
  // core version + navigation, pagination modules:
- import Swiper, { Navigation, Pagination } from 'swiper';
+ import Swiper, { Navigation, Pagination, EffectCoverflow
+ } from 'swiper';
+ 
 
 const swiper = new Swiper('.mySwiper', {
    // configure Swiper to use modules
-   modules: [Navigation, Pagination],
+   modules: [Navigation, Pagination, EffectCoverflow
+   ],
   // Optional parameters
-  slidesPerView: 3,
-  slidesPerGroup: 1,
+  centeredSlides: true,
+  slidesPerView: 2,
   spaceBetween: 0,
   loop: true,
   loopFillGroupWithBlank: true,
   grabCursor: true,
   slideToClickedSlide: true,
-  // keyboard: {
-  //   enabled: true,
-  //   onlyInViewport:true,
-  //   pageUpDown:true,
-  // },
-  autoplay: {
-    delay: 1000,
-    stopOnLastSlide: true,
-    disableOnInteraction: false,
+ 
+
+  speed: 800,
+
+  effect: 'coverflow',
+  coverflowEffect: {
+    rotate:6,
+    stretch:32,
+    scale: 0.6,
+    slideShadows: false,
   },
-
-  speed: 900,
-
-  // effect: 'coverflow',
-  // coverflowEffect: {
-  //   rotate:20,
-  //   stretch:20,
-  //   slideShadows:true,
-  // },
 
   
   // If we need pagination
