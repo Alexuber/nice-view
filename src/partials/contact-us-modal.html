@@ -1,4 +1,4 @@
-<div class="backdrop backdrop--is-hidden" data-modal>
+<div class="contact-us__backdrop contact-us__backdrop--is-hidden" data-modal>
   <div class="contact-us-modal">
     <button class="close-btn" type="button" data-modal-close>
       <svg class="close-btn__icon" width="32" height="32">
@@ -41,6 +41,7 @@
         id="user_email"
         placeholder="Contact@gmail.com"
         required
+        pattern="^\S+@\S+\.\S+$"
       />
     </form>
     <button class="submit-btn" type="submit">Contact us</button>

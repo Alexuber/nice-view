@@ -1,4 +1,4 @@
-.backdrop {
+.contact-us__backdrop {
   position: fixed;
   top: 0;
   width: 100%;
@@ -9,12 +9,12 @@
     visibility var(--transition-options);
 }
 
-.backdrop--is-hidden {
+.contact-us__backdrop--is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 
-  & .modal {
+  & .contact-us-modal {
     transform: translate(-50%, -50%) scale(0);
   }
 }
