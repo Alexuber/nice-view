@@ -11,4 +11,6 @@
     function toggleModal() {
       refs.modal.classList.toggle('download__backdrop--is-hidden');
     }
+
+    bodyScrollLock[scrollLockMethod](document.body);
   })();
