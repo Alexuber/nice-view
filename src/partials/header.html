@@ -29,33 +29,23 @@
           </li>
         </ul>
       </nav>
-      <button class="header__button">Contact us</button>
+      <button class="header__button" data-contact-modal-open>Contact us</button>
       <button
         class="menu-toggle js-open-menu"
         aria-expanded="false"
         aria-controls="mobile-menu"
       >
         <svg class="icon__burger" width="24" height="24">
-          <use class="burger" href="./images/icons.svg#icon-burger"></use>
+          <use class="burger" href="./images/icons.svg#burger-menu"></use>
         </svg>
       </button>
-      <!-- <div class="action">
-        <button
-          class="menu-toggle js-open-menu hamburger hamburger--emphatic "
-          aria-expanded="false"
-          aria-controls="mobile-menu">
-          <span class="hamburger-box" >
-            <span class="hamburger-inner">
-          </span>
-        </button>
-      </div> -->
     </div>
   </header>
 
   <div class="menu-container js-menu-container" id="mobile-menu">
     <button class="menu-toggle js-close-menu">
       <svg class="icon__cross" width="30" height="30" aria-label="mobile-menu">
-        <use class="cross" href="./images/icons.svg#icon-cross"></use>
+        <use class="cross" href="./images/icons.svg#cross"></use>
       </svg>
     </button>
 
@@ -80,12 +70,4 @@
       </li>
     </ul>
   </div>
-  <!-- <script>
-
-const { height: pageHeaderHeight } = document
-	.querySelector(".header") // подставляете класс вашего хедера
-	.getBoundingClientRect();
-
-document.body.style.paddingTop = `${pageHeaderHeight}px`;
-  </script> -->
 </body>
