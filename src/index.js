@@ -5,3 +5,4 @@ import "./js/modal-flat";
 
 import './js/scroll';
 
+import "./js/download-modal";

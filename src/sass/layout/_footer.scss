@@ -50,15 +50,6 @@
   }
 }
 
-.icon__logo {
-}
-
-.logo__menu {
-}
-
-.logo__tablet {
-}
-
 .footer__nav {
   // margin-right: 46px;
 
@@ -108,7 +99,7 @@
 }
 
 .footer__contacts {
-  width: 115px;
+  width: 135px;
 
   @media screen and (min-width: 768px) and (max-width: $desctop) {
     margin-right: 91px;
@@ -129,10 +120,12 @@
   flex-wrap: wrap;
 }
 
-.contacts-brake {
-  // @media scren and(min-width:768px) {
-  //   display: none;
-  // }
+.footer__email {
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+  }
 }
 .socials {
 }
@@ -145,10 +138,6 @@
 }
 
 .social__item {
-  // @media screen and (max-width: 767px) {
-  //   margin-top: 28px;
-  // }
-  // margin-right: 20px;
   display: flex;
 
   &:not(:last-child) {
@@ -164,7 +153,23 @@
 
 .footer__icon {
   fill: white;
-  //   stroke: #ffffff;
+  transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: #7f6e54;
+  }
+}
+
+.footer__icon-twitter {
+  fill: none;
+  stroke: #ffffff;
+  transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    stroke: #7f6e54;
+  }
 }
 
 .footer__terms {
