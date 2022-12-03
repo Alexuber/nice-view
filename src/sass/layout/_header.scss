@@ -1,4 +1,14 @@
 .header {
+    // position: fixed;
+  
+    // position: fixed;
+    // z-index: 100;
+    // width: 100%;
+    // margin-top: -80px;
+    // @media screen and (min-width:768px) {
+    //     margin-top: -100px;
+    // }
+    text-align: center;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -7,14 +17,36 @@
     color: #FCFCFB;
     background: linear-gradient(336.93deg, #2D2A22 5.7%, #7E6D53 108.98%); 
 }
+
+// @media screen and(min-width: 768px) {
+//     .page__header {
+//         position: fixed;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         z-index: 2;
+    
+//     }
+
+
+
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+
+    // min-height: 80px;
+//     @media screen and (min-width:768px) {
+//         min-height: 100px;
+//     }
+
+
 .header__container {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 26px;
-    padding-bottom: 26px;
     min-height: 80px;
+    // z-index: 2;
 }
 .logo__tablet {
     display: none;
@@ -93,38 +125,6 @@
          margin-right: 48px;
      }
 }
-
-// a {
-//     display: inline-block;
-//     width: 50px;
-//     text-decoration: none;
-// }
-
-// nav,
-// scroll-container {
-//     display: block;
-//     margin: 0 auto;
-//     text-align: center;
-// }
-
-// nav {
-//     width: 339px;
-//     padding: 5px;
-//     border: 1px solid black;
-// }
-
-// scroll-container {
-//     display: block;
-//     width: 350px;
-//     height: 200px;
-//     overflow-y: scroll;
-//     scroll-behavior: smooth;
-// }
-
-// scroll-page {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     height: 100%;
-//     font-size: 5em;
-// }
+// :root {
+//   scroll-behavior: smooth;
+// } 

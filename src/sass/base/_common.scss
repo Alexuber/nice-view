@@ -1,11 +1,16 @@
+
 body {
   font-family: $main-font;
   font-style: normal;
   color: $main-font-color;
   font-size: 16px;
   line-height: calc(24 / 16);
-}
 
+  // padding-top: 80px;
+  // @media screen and(min-width: 768px) {
+  //   padding-top: 100px;
+  // }
+}
 .container {
   margin-left: auto;
   margin-right: auto;

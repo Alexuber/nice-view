@@ -1,18 +1,16 @@
 <body>
-  <header class="header">
+  <header class="header page__header">
     <div class="container header__container">
       <a class="logo" href="">
         <svg class="icon__logo" width="56" height="56">
           <use class="logo__menu" href="./images/icons.svg#loogo"></use>
           <use class="logo__tablet" href="./images/icons.svg#logo"></use>
-
-          
         </svg>
       </a>
       <nav class="nav">
-        <ul class="nav__list header__container">
+        <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link" href="">Home</a>
+            <a class="nav__link" href="./index.html">Home</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#about-us">About</a>
@@ -31,17 +29,17 @@
           </li>
         </ul>
       </nav>
-
-      <!-- <scroll-container>
-        <scroll-page id="">Home</scroll-page>
-        <scroll-page id="about-us">About</scroll-page>
-        <scroll-page id="apartments">Apartments</scroll-page>
-        <scroll-page id="infrastructure">Infrastructure</scroll-page>
-         <scroll-page id="gallery">Gallery</scroll-page>
-        <scroll-page id="contacts">Contacts</scroll-page>
-      </scroll-container> -->
       <button class="header__button">Contact us</button>
-      <div class="action">
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="icon__burger" width="24" height="24">
+          <use class="burger" href="./images/symbol-defs.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <!-- <div class="action">
         <button
           class="menu-toggle js-open-menu hamburger hamburger--emphatic "
           aria-expanded="false"
@@ -50,54 +48,44 @@
             <span class="hamburger-inner">
           </span>
         </button>
-      </div>
-        
-
-
-  </header> 
-  <div class="menu-container js-menu-container " id="mobile-menu">
-    <div class="action">
-      <button class="menu-toggle js-close-menu is-active ">
-         <span class="hamburger-box" >
-        <span class="hamburger-inner"></span>
-      </button>
+      </div> -->
     </div>
-        <ul class="menu__nav">
-          <li class="menu__nav--item">
-            <a class="menu__link" href="">Home</a>
-          </li>
-          <li class="menu__nav--item">
-            <a class="menu__link" href="#about-us">About</a>
-          </li>
-          <li class="menu__nav--item">
-            <a class="menu__link" href="#apartments">Apartments</a>
-          </li>
-          <li class="menu__nav--item">
-            <a class="menu__link" href="#infrastructure">Infrastructure</a>
-          </li>
-          <li class="menu__nav--item">
-            <a class="menu__link" href="#gallery">Gallery</a>
-          </li>
-          <li class="menu__nav--item">
-            <a class="menu__link" href="#contacts">Contacts</a>
-          </li>
-        </ul>
-    </div>
-    <script>
-      // Look for .hamburger
-      var hamburger = document.querySelector(".hamburger");
-      // On click
-        hamburger.addEventListener("click", function() {
-        // Toggle class "is-active"
-        hamburger.classList.toggle("is-active");
-        // Do something else, like open/close menu
-      });
-    </script>
-  <script
-    defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"
-  ></script>
-  <script defer src="./js/mobile-menu.js"></script>
+  </header>
+
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg class="icon__cross" width="30" height="30" aria-label="mobile-menu">
+        <use class="cross" href="./images/symbol-defs.svg#icon-cross"></use>
+      </svg>
+    </button>
+
+    <ul class="menu__nav">
+      <li class="menu__nav--item">
+        <a class="menu__link" href="./index.html">Home</a>
+      </li>
+      <li class="menu__nav--item">
+        <a class="menu__link" href="#about-us">About</a>
+      </li>
+      <li class="menu__nav--item">
+        <a class="menu__link" href="#apartments">Apartments</a>
+      </li>
+      <li class="menu__nav--item">
+        <a class="menu__link" href="#infrastructure">Infrastructure</a>
+      </li>
+      <li class="menu__nav--item">
+        <a class="menu__link" href="#gallery">Gallery</a>
+      </li>
+      <li class="menu__nav--item">
+        <a class="menu__link" href="#contacts">Contacts</a>
+      </li>
+    </ul>
+  </div>
+  <!-- <script>
+
+const { height: pageHeaderHeight } = document
+	.querySelector(".header") // подставляете класс вашего хедера
+	.getBoundingClientRect();
+
+document.body.style.paddingTop = `${pageHeaderHeight}px`;
+  </script> -->
 </body>
