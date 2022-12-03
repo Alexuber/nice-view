@@ -29,8 +29,8 @@ body {
 
   @media screen and (min-width: 1280px) {
     width: 1280px;
-    padding-right: 32px;
-    padding-left: 32px;
+    padding-right: 68px;
+    padding-left: 68px;
   }
 }
 
@@ -59,4 +59,13 @@ main {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.button {
+  background-color: $second-font-color;
+  color: $dark-font;
+  cursor: pointer;
+  font-family: inherit;
+  line-height: calc(36/24);
+  border: none;
 }

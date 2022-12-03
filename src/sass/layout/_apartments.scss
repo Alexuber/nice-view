@@ -49,6 +49,7 @@
   border-radius: 16px;
   transition: border-color 300ms;
   justify-content: center;
+  cursor: pointer;
 
   padding: 20px 22px;
 
@@ -108,7 +109,7 @@
 .apartments__subtitle {
   font-size: 28px;
   line-height: 120%;
-
+  font-weight: 400;
   margin-bottom: 8px;
 
   color: $dark-font;

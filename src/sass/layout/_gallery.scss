@@ -1,9 +1,8 @@
 .gallery {
   padding-top: 60px;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (min-width: 768px) {
     padding-top: 100px;
-
   }
 }
 
@@ -17,8 +16,8 @@
   }
 
   @media screen and (min-width:$desctop) {
-    padding-left: 68px;
-    padding-right: 68px;
+    padding-left: 46px;
+    padding-right: 46px;
   }
 }
 
@@ -29,15 +28,20 @@
   font-size: 40px;
   line-height: calc(60/40);
   color: $main-font-color;
+  padding-left: 20px;
 
   @media screen and (min-width:$tablet) {
     margin-bottom: 24px;
+    padding-left: 0;
+
   }
 
   @media screen and (min-width:$desctop) {
     margin-bottom: 20px;
+    padding-left: 20px;
+
   }
-  
+
 }
 
 // .gallery .container {

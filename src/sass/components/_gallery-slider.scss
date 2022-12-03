@@ -86,6 +86,7 @@
   --swiper-theme-color: $background-back;
   --swiper-navigation-size: 12px;
   bottom: 115px;
+  z-index: 0;
 
   @media screen and (min-width: $mobile) {
     bottom: 200px;
@@ -107,7 +108,7 @@
     right: -21px;
   }
   @media screen and (min-width: $desctop) {
-    right: -0px;
+    right: 10px;
   }
 }
 
@@ -116,6 +117,6 @@
     left: -21px;
   }
   @media screen and (min-width: $desctop) {
-    left: 0;
+    left: 10px;
   }
 }

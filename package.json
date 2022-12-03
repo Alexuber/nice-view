@@ -20,6 +20,7 @@
   "dependencies": {
     "hamburgers": "^1.2.1",
     "modern-normalize": "^1.1.0",
+    "scroll-lock": "^2.1.5",
     "swiper": "^8.4.5"
   },
   "devDependencies": {
