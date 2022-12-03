@@ -55,3 +55,12 @@ main {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.button {
+  background-color: $second-font-color;
+  color: $dark-font;
+  cursor: pointer;
+  font-family: inherit;
+  line-height: calc(36/24);
+  border: none;
+}
