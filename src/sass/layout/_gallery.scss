@@ -1,9 +1,8 @@
 .gallery {
   padding-top: 60px;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (min-width: 768px) {
     padding-top: 100px;
-
   }
 }
 
@@ -42,7 +41,7 @@
     padding-left: 20px;
 
   }
-  
+
 }
 
 // .gallery .container {
