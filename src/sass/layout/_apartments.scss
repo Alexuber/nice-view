@@ -1,12 +1,12 @@
 .apartments {
   border-top: 80px solid transparent;
   margin-top: -80px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     border-top: 100px solid transparent;
     margin-top: -100px;
   }
-  
-  background-color: #fcfcfb;
+
+  background-color: $second-font-color;
   padding-top: 24px;
   padding-bottom: 40px;
 }
@@ -23,7 +23,7 @@
   margin-bottom: 28px;
 
   color: $main-font-color;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 40px;
     font-size: 40px;
     line-height: 60px;
@@ -39,7 +39,7 @@
 }
 
 .apartments__list {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     gap: 32px;
     flex-wrap: wrap;
@@ -69,11 +69,11 @@
     border-color: rgba(126, 109, 83, 1);
   }
 
-  @media screen and(min-width:768px) {
+  @media screen and(min-width: $tablet) {
     flex-basis: calc((100% - 32px) / 2);
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     flex-basis: calc((100% - 32px * 2) / 3);
   }
 }
@@ -81,7 +81,7 @@
 .apartment__box {
   padding: 20px 22px;
 
-  @media screen and(min-width:768px) {
+  @media screen and(min-width: $tablet) {
     padding: 20px 58px;
   }
 }
@@ -105,7 +105,7 @@
   color: $dark-font;
   text-align: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 32px;
     line-height: calc(31 / 24);
     margin-bottom: 14px;
@@ -118,7 +118,7 @@
   line-height: 130%;
   color: $main-font-color;
   text-align: center;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 24px;
   }
 }
@@ -129,7 +129,7 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
-  color: #fcfcfb;
+  color: $second-font-color;
   border: 1px solid transparent;
   border-radius: 16px;
   margin: 0 auto;
@@ -141,15 +141,15 @@
   transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1), background-color
     300ms cubic-bezier(0.4, 0, 0.2, 1), border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 264px;
     height: 58px;
   }
 
   &:hover,
   &:focus {
-    color: #7e6d53;
-    background-color: #fcfcfb;
-    border-color: #7e6d53;
+    color: $main-font-color;
+    background-color: $second-font-color;
+    border-color: $main-font-color;
   }
 }

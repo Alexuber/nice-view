@@ -5,7 +5,7 @@
   padding-top: 20px;
   padding-bottom: 8px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding-top: 32px;
   }
 }
@@ -13,7 +13,7 @@
 .footer__container {
   padding-right: 15px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     padding-left: 86px;
     padding-right: 104px;
   }
@@ -29,23 +29,23 @@
   // justify-content: space-around;
   margin-bottom: 20px;
 
-  // @media screen and(max-width:767px) {
+  // @media screen and(max-width:$tablet) {
   //   flex-wrap: wrap;
   // }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     flex-wrap: nowrap;
     gap: 0;
   }
 }
 
 .footer__logo {
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: $max-mobile) {
     display: none;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-right: 127px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-right: 162px;
   }
 }
@@ -53,10 +53,10 @@
 .footer__nav {
   // margin-right: 46px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-right: 83px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-right: 208px;
   }
 }
@@ -68,7 +68,7 @@
   font-size: 18px;
   line-height: 22px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 20px;
     line-height: 24px;
   }
@@ -86,7 +86,7 @@
   &:not(:last-child) {
     margin-bottom: 16px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 16px;
     line-height: 19px;
   }
@@ -101,12 +101,12 @@
 .footer__contacts {
   width: 135px;
 
-  @media screen and (min-width: 768px) and (max-width: $desctop) {
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     margin-right: 91px;
     width: 219px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-right: 253px;
     min-width: 283px;
   }
@@ -123,7 +123,7 @@
 .footer__email {
   display: flex;
   flex-wrap: wrap;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     flex-wrap: nowrap;
   }
 }
@@ -144,7 +144,7 @@
     margin-right: 20px;
   }
 
-  @media screen and(min-width:768px) {
+  @media screen and(min-width: $tablet) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -157,7 +157,7 @@
 
   &:hover,
   &:focus {
-    fill: #7f6e54;
+    fill: $main-font-color;
   }
 }
 
@@ -168,7 +168,7 @@
 
   &:hover,
   &:focus {
-    stroke: #7f6e54;
+    stroke: $main-font-color;
   }
 }
 
