@@ -108,12 +108,6 @@
 @each $item in pin, ring, email {
   .contacts__link--#{$item}::before {
     background-image: url(../images/contacts/icon-#{$item}.svg);
-
-// @media (min-device-pixel-ratio: 2),
-//   (min-resolution: 192dpi),
-//   (min-resolution: 2dppx) {
-//   background-image: url(../images/about/icon-#{$item}@2x.png);
-// }
   }
 }
 
