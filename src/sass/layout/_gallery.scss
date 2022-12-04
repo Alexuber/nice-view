@@ -1,14 +1,14 @@
 .gallery {
   border-top: 80px solid transparent;
   margin-top: -80px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     border-top: 100px solid transparent;
     margin-top: -100px;
   }
 
   padding-top: 60px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding-top: 100px;
   }
 }
@@ -22,7 +22,7 @@
     padding-right: 32px;
   }
 
-  @media screen and (min-width:$desctop) {
+  @media screen and (min-width:$desktop) {
     padding-left: 46px;
     padding-right: 46px;
   }
@@ -43,7 +43,7 @@
 
   }
 
-  @media screen and (min-width:$desctop) {
+  @media screen and (min-width:$desktop) {
     margin-bottom: 20px;
     padding-left: 20px;
 

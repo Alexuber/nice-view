@@ -1,13 +1,13 @@
 .section--infrastructure {
   border-top: 80px solid transparent;
   margin-top: -80px;
-  @media screen and (min-width: 768px) {
-    border-top: 100px solid transparent;
-    margin-top: -100px;
-  }
+  @media screen and (min-width: $tablet) {
+      border-top: 100px solid transparent;
+      margin-top: -100px;
+    }
 
   padding-top: 60px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding-top: 100px;
   }
 
@@ -21,16 +21,17 @@
     @media screen and (min-width: $tablet) {
       padding-left: 32px;
     }
-    @media screen and (min-width: $desctop) {
+    @media screen and (min-width:$desktop) {
       padding-left: 0;
     }
   }
 }
 
-.ifrastructure-container {
-  @media screen and (max-width: $desctop) {
-    padding-left: 0;
-    padding-right: 0;
+  .ifrastructure-container {
+    @media screen and (max-width:$desktop) {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }
 .section__background-img {
@@ -55,15 +56,15 @@
   }
 }
 
-.features {
-  position: absolute;
-  top: 40px;
-  left: 20px;
-  padding: 24px 18px;
-  width: calc(100% - 40px);
-  height: calc(100% - 80px);
-  background-color: rgba(#fcfcfb, 80%);
-  border-radius: 8px;
+  .features {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    padding: 24px 18px;
+    width: calc(100% - 40px);
+    height: calc(100% - 80px);
+    background-color: rgba(252, 252, 251, 0.8);
+    border-radius: 8px;
 
   @media screen and (min-width: $tablet) {
     right: 37px;
@@ -74,8 +75,9 @@
     padding: 24px 32px;
   }
 
-  @media screen and (min-width: $desctop) {
-    right: 143px;
+    @media screen and (min-width: $desktop) {
+      right: 143px;
+    }
   }
 }
 
@@ -99,9 +101,10 @@
         padding-right: 14px;
       }
 
-      @media screen and (min-width: $desctop) {
-        padding-left: 0px;
-        padding-right: 14px;
+        @media screen and (min-width: $desktop) {
+          padding-left: 0px;
+          padding-right: 14px;
+        }
       }
     }
   }
@@ -116,26 +119,26 @@
   }
 }
 
-.features__number {
-  width: 101px;
-  height: 101px;
-  border: 1px solid #2d2a22;
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  padding: 15px 14px 14px 15px;
-  text-align: center;
-  color: #2d2a22;
-  font-weight: 600;
-}
+  .features__number {
+    width: 101px;
+    height: 101px;
+    border: 1px solid $dark-font;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 15px 14px 14px 15px;
+    text-align: center;
+    color: $dark-font;
+    font-weight: 600;
+  }
 
-.features__title {
-  align-items: center;
-  text-align: center;
-  padding-left: 7px;
-  font-size: 14px;
-  line-height: 21px;
-  color: #7e6d53;
+  .features__title {
+    align-items: center;
+    text-align: center;
+    padding-left: 7px;
+    font-size: 14px;
+    line-height: 21px;
+    color: $main-font-color;
 
   @media screen and (min-width: $tablet) {
     padding-left: 14px;

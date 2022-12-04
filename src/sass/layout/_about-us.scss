@@ -1,7 +1,7 @@
 .about {
   border-top: 80px solid transparent;
   margin-top: -80px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     border-top: 100px solid transparent;
     margin-top: -100px;
   }
@@ -13,10 +13,10 @@
   @media screen and (min-width:$tablet) {
     padding-top: 100px;
     padding-bottom: 100px;
-  
+
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-right: auto;
     margin-left: auto;
   }
@@ -26,11 +26,11 @@
   padding-bottom: 279px;
   width: 100%;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding-bottom: 306px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     padding-bottom: 290px;
   }
 
@@ -46,7 +46,7 @@
     background-image: url(../images/about/img1-mob@2x.jpg);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     background-image: url(../images/about/img1_tab@1x.jpg);
 
     @media (min-device-pixel-ratio: 2),
@@ -56,7 +56,7 @@
     }
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     background-image: url(../images/about/img1-ds@1x.jpg);
 
     @media (min-device-pixel-ratio: 2),
@@ -75,14 +75,14 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
     padding-top: 40px;
     padding-bottom: 40px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     padding-top: 44px;
     padding-bottom: 44px;
     justify-content: space-around;
@@ -94,18 +94,18 @@
   flex-wrap: wrap;
   gap: 20px;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: $max-mobile) {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 32px;
     width: 280px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     row-gap: 60px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     max-width: 497px;
     row-gap: 92px;
   }
@@ -114,7 +114,7 @@
 .about__item {
   flex-basis: calc((100% - 20px) / 2);
 
-  @media screen and (min-width: 768px) and (max-width: $desctop) {
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     max-width: 152px;
   }
 }
@@ -145,11 +145,11 @@
 }
 
 .about__box {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     max-width: 336px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     width: 393px;
   }
 }
@@ -161,7 +161,7 @@
   font-size: 16px;
   color: $dark-font;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 24px;
   }
 }
@@ -170,7 +170,7 @@
   font-weight: 300;
   font-size: 12px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 16px;
   }
 }

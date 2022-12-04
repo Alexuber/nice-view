@@ -6,7 +6,7 @@
     padding-bottom: 19px;
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     padding-bottom: 23px;
   }
 }
@@ -20,7 +20,7 @@
     --swiper-theme-color: #000000;
     --swiper-navigation-size: 23px;
   }
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     width: 1012px;
     height: 590px;
   }
@@ -60,7 +60,7 @@
 }
 
 .swiper-pagination-bullet-active {
-  border: 1px solid #7e6d53;
+  border: 1px solid $main-font-color;
   --swiper-pagination-color: #c4c4c4;
 }
 
@@ -98,7 +98,7 @@
     bottom: 215px;
   }
 
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     bottom: 305px;
   }
 }
@@ -107,7 +107,7 @@
   @media screen and (min-width: $tablet) {
     right: -21px;
   }
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     right: 10px;
   }
 }
@@ -116,7 +116,7 @@
   @media screen and (min-width: $tablet) {
     left: -21px;
   }
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     left: 10px;
   }
 }

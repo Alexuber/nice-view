@@ -12,6 +12,7 @@
   @media screen and (min-width: $tablet) {
     padding-top: 100px;
     padding-bottom: 100px;
+
   }
 }
 
@@ -41,11 +42,11 @@
   margin-right: auto;
   margin-left: auto;
 
-  @media screen and (max-width:$tablet) {
+  @media screen and (max-width: $max-mobile) {
     // text-align: center;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding: 53px 74px;
     max-width: 704px;
     display: flex;
@@ -53,7 +54,7 @@
     justify-content: center;
     align-items: center;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     max-width: 700px;
   }
 }
@@ -77,7 +78,7 @@
   &:not(:last-child) {
     margin-bottom: 14px;
   }
- @media screen and (min-width:$tablet) {
+ @media screen and (min-width: $tablet) {
   &:not(:last-child) {
     margin-bottom: 24px;
   }
@@ -113,7 +114,7 @@
 
 
 .contscts__icon {
-  stroke: #fcfcfb;
+  stroke: $second-font-color;
   fill: none;
   margin-right: 8px;
   stroke: white;
@@ -123,7 +124,7 @@
 .contacts__btn {
   width: 240px;
   height: 47px;
-  background-color: #fcfcfb;
+  background-color: $second-font-color;
   border-radius: 8px;
   border: 1px solid transparent;
 
@@ -141,10 +142,10 @@
   &:focus {
     color: white;
     background-color: #7e6d53;
-    border:1px solid white;
+    border-color: white;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 240px;
     height: 54px;
   }

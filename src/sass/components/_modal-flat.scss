@@ -28,13 +28,13 @@
 .modal-flat {
   width: 320px;
   min-height: 570px;
-  background-color: #fcfcfb;
+  background-color: $second-font-color;
   position: relative;
   padding: 32px 40px;
   transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: scale(1);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 571px;
     min-height: 355px;
     padding: 40px 32px;
@@ -46,7 +46,7 @@
   top: 16px;
   right: 16px;
   border: none;
-  background: #fcfcfb;
+  background: $second-font-color;
   cursor: pointer;
 }
 
@@ -54,7 +54,7 @@
   font-weight: 700;
   font-size: 28px;
   line-height: calc(42 / 28);
-  color: #2d2a22;
+  color: $dark-font;
   margin-bottom: 32px;
   text-align: center;
 }
@@ -65,7 +65,7 @@
   align-items: flex-start;
   gap: 22px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     flex-direction: row;
     align-items: center;
     gap: 50px;
@@ -86,14 +86,14 @@
   font-weight: 300;
   font-size: 20px;
   line-height: calc(30 / 20);
-  color: #2d2a22;
+  color: $dark-font;
 }
 
 .specification__numder {
   font-weight: 400;
   font-size: 20px;
   line-height: calc(30 / 20);
-  color: #7e6d53;
+  color: $main-font-color;
 }
 
 .price__item {
@@ -101,13 +101,13 @@
   font-weight: 500;
   font-size: 20px;
   line-height: calc(30 / 20);
-  color: #7e6d53;
+  color: $main-font-color;
 
   &:nth-child(2) {
     font-weight: 300;
     font-size: 14px;
     line-height: 21px;
-    color: #2d2a22;
+    color: $dark-font;
     margin-top: 8px;
   }
 }
@@ -117,15 +117,16 @@
   margin-top: 26px;
   width: 192px;
   height: 48px;
-  background-color: #7e6d53;
+  background-color: $main-font-color;
   border-radius: 8px;
   border: none;
 
   font-weight: 400;
   font-size: 16px;
   line-height: calc(24 / 16);
-  color: #fcfcfb;
+  color: $second-font-color;
 
+  @media screen and (min-width: $tablet) {
   &:hover,
   &:focus {
     transform: scale(1.1);

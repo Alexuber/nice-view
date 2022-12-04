@@ -21,11 +21,11 @@
 }
 
 .contact-us-modal {
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: $max-mobile) {
     width: 320px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 530px;
     padding: 60px;
   }
@@ -71,9 +71,9 @@
   position: absolute;
   top: 12px;
   right: 12px;
- 
 
-  @media screen and (min-width: 768px) {
+
+  @media screen and (min-width: $tablet) {
     top: 20px;
     right: 20px;
   }
@@ -86,7 +86,7 @@
   font-size: 20px;
   line-height: calc(24 / 20);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 40px;
 
     font-size: 28px;
@@ -94,7 +94,7 @@
     text-align: center;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 32px;
     line-height: calc(39 / 32);
   }
@@ -105,14 +105,14 @@
   flex-direction: column;
   margin-bottom: 28px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 40px;
   }
 
   font-size: 14px;
   line-height: calc(17 / 14);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 16px;
     line-height: calc(20 / 16);
   }
@@ -121,7 +121,7 @@
 .contact-us-modal__label {
   margin-bottom: 8px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 12px;
   }
 }
@@ -215,12 +215,12 @@
   line-height: calc(24 / 16);
   color: $second-font-color;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: $max-mobile) {
     width: 192px;
     height: 48px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 224px;
     height: 54px;
 
