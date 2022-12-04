@@ -16,12 +16,12 @@
   }
 
   @media screen and (min-width: $mobile) {
-    background-image: url(../images/hero/group-4@1x.jpg);
+    background-image: url(../../images/hero/group-4@1x.jpg);
     height: 480px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/hero/group-4@2x.jpg);
+      background-image: url(../../images/hero/group-4@2x.jpg);
     }
   }
 
