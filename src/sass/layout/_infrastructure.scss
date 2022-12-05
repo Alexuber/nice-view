@@ -1,13 +1,7 @@
 .section--infrastructure {
-  border-top: 80px solid transparent;
-  margin-top: -80px;
-  @media screen and (min-width: $tablet) {
-      border-top: 100px solid transparent;
-      margin-top: -100px;
-    }
-
   padding-top: 60px;
-  @media screen and (min-width: $tablet) {
+
+  @media screen and (min-width: 768px) {
     padding-top: 100px;
   }
 
@@ -143,6 +137,32 @@
   }
 }
 
+.features__number {
+  width: 101px;
+  height: 101px;
+  border: 1px solid #2D2A22;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 15px 14px 14px 15px;
+  text-align: center;
+  color: #2D2A22;
+  font-weight: 600;
+}
+
+.features__title {
+  align-items: center;
+  text-align: center;
+  padding-left: 7px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #7E6D53;
+  @media screen and (min-width: $tablet) {
+    padding-left: 14px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 
   .features__number {
     width: 101px;
