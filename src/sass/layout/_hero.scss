@@ -7,23 +7,23 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(../images/hero/hero-bg-mob@1x.png);
+  background-image: url(../images/hero/hero-bg-mob-new@1x.png);
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/hero/hero-bg-mob@2x.png);
+    background-image: url(../images/hero/hero-bg-mob-new@2x.png);
   }
 
-  @media screen and (min-width: $mobile) {
-    background-image: url(../images/hero/group-4@1x.jpg);
-    height: 480px;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/hero/group-4@2x.jpg);
-    }
-  }
+  // @media screen and (min-width: $mobile) {
+  //   background-image: url(../images/hero/group-4@1x.jpg);
+  //   height: 480px;
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url(../images/hero/group-4@2x.jpg);
+  //   }
+  // }
 
   @media screen and (min-width: $tablet) {
     background-image: url(../images/hero/img1-tab@1x.png);
