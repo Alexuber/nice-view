@@ -75,15 +75,17 @@
     font-size: 16px;
     font-weight: 300;
     line-height: calc(24 / 16);
-    background-color: transparent;
-    border: 1px solid #fcfcfb;
+    background-color: $dark-font;
     color: #fcfcfb;
-    // &:hover,
-    // &:focus {
-    //     background-color: #188ce8;
-    //
-    // }
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), 
+            background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);                ;
+    &:hover,
+    &:focus {
+        background-color: $second-font-color;
+        color: $dark-font;
+    }
   }
+  
   .nav__list {
     margin-right: auto;
   }
